@@ -26,11 +26,17 @@ use App\Http\Controllers\Api\CangKuController;
 use App\Http\Controllers\Api\CaoZuoController;
 use App\Http\Controllers\Api\ChanPinXianController;
 use App\Http\Controllers\Api\FaHuoDanController;
+use App\Http\Controllers\Api\FuZhaoJieLunLeiXingController;
+use App\Http\Controllers\Api\FuZhaoPiCiCaoZuoJiLuController;
 
 Route::get('/cangku', [CangKuController::class, 'index']);
 Route::get('/chanpinxian', [ChanPinXianController::class, 'index']);
 Route::get('/caozuo', [CaoZuoController::class, 'index']);
 Route::get('/fahuo', [FaHuoDanController::class, 'index']);
+Route::get('/fuzhao', [FuZhaoJieLunLeiXingController::class, 'index']);
+Route::get('/fuzhaopi', [FuZhaoPiCiCaoZuoJiLuController::class, 'index']);
+
+
 
 
 // Test koneksi database
